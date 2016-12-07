@@ -16,8 +16,8 @@ gulp.task('lint', function() {
   .pipe(eslint.failAfterError());
 });
 
-gulp.task('dev', function() {
-  gulp.watch(['**/*.js', '!node_modules/**'], ['lint', 'test', 'log']);
+gulp.task('dev', ['log'], function() {
+  gulp.watch(['**/*.js', '!node_modules/**'], ['lint', 'test']);
 });
 
 gulp.task('log', function() {

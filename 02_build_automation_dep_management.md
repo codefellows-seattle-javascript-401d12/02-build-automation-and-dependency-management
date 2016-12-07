@@ -11,9 +11,9 @@
 
 ##Description:
 
-Add a `.gulpfile` to your `lab-01` assignment
+Add a `gulpfile.js` to your `lab-01` assignment
 
-Your `.gulpfile` should include a `test`, `lint`, and `dev` task - the `dev` task should be set as the default task.
+Your `gulpfile.js` should include a `test`, `lint`, and `dev` task - the `dev` task should be set as the default task.
 
 Add a `package.json` file - this should include all necessary *developer* dependencies.
 

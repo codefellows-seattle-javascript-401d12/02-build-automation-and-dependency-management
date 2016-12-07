@@ -11,6 +11,8 @@ describe('Greet', function () {
       //creating variable that stores value of sayHello
       expect(greet).to.have.property('sayHello');
       expect(result).to.equal('hello erick!');
+      expect(result).to.have.length.within(1,12);
+      expect(result).to.be.NaN;
     });
     it('should throw error that the name is missing', function () {
       var result = greet.sayHello;
@@ -22,6 +24,7 @@ describe('Greet', function () {
     it('should return farewell!', function () {
       var bye = 'farewell!';
       expect(bye).to.equal('farewell!');
+      expect(bye).to.be.a('string');
     });
   });
 });

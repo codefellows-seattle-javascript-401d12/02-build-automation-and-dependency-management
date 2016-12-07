@@ -6,7 +6,7 @@ const eslint = require('gulp-eslint');
 const istanbul = require('gulp-istanbul');
 
 gulp.task('pre-test', function() {
-  return gulp.src(['./greet/*.js', '!node_modules/**'])
+  return gulp.src(['./lib/*.js', '!node_modules/**'])
     .pipe(istanbul())
     .pipe(istanbul.hookRequire());
 });

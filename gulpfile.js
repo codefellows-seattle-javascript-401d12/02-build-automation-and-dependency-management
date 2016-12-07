@@ -11,3 +11,13 @@ gulp.task('test', function() {
   gulp.src('./test/*-test.js', { read: false })
   .pipe(mocha({ reporter: 'spec' }));
 });
+
+// this task automates our linting.
+// it sources all of our project's js files, with the exception of node_modules.
+// it 'pipes in' our eslint settings, and an error handling method for when our code doesn't pass eslint.
+gulp.task('lint', function() {
+  return gulp.src(['**/*.js', '!node_modules'])
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError());
+});

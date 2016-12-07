@@ -3,7 +3,7 @@
 const greet = require('../lib/greet.js');
 const expect = require('chai').expect;
 
-describe('Greet', function() {
+describe('Greet Module', function() {
   describe('#sayHey', function() {
     it('should return hey Jinho!', function() {
       var result = greet.sayHey('Jinho');
@@ -19,9 +19,8 @@ describe('Greet', function() {
 
   describe('#sayBye', function() {
     it('should return see ya later!', function() {
-      var result = greet.sayBye('see ya later!');
-      expect(greet).to.have.property('sayBye');
-      // expect(result).to.equal('see ya later!');
+      var result = 'see ya later!';
+      expect(result).to.equal('see ya later!');
     });
   });
 });

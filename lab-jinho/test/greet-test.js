@@ -20,6 +20,9 @@ describe('Greet', function() {
   describe('#sayBye', function() {
     it('should return see ya later!', function() {
       // TODO: finish building out test
+      var result = greet.sayBye('see ya later!');
+      expect(greet).to.have.property('sayBye');
+      expect(result).to.equal('see ya later!');
     });
   });
 });

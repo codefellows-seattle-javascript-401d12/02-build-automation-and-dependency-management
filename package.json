@@ -1,0 +1,28 @@
+{
+  "name": "02-build-automation-and-dependency-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanheemstra/02-build-automation-and-dependency-management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathanheemstra/02-build-automation-and-dependency-management/issues"
+  },
+  "homepage": "https://github.com/jonathanheemstra/02-build-automation-and-dependency-management#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "mocha": "^3.2.0"
+  }
+}

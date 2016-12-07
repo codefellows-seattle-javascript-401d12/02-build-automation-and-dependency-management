@@ -1,14 +1,10 @@
 'use strict';
-/*
-mocha gives us access to the describe and it blocks. It's a testing framework and that is all.
-Node has a built in module called assert. This is a very basic way to run tests but best pracitices usually don't take advantage of the assert. 
-*/
 
 const greet = require('../lib/greet.js');
 const assert = require('assert');
 let name = process.argv[2];
 
-if(name === undefined) name = 'jonny';
+if(!name) name = 'jonny';
 
 describe('Test greet file', function() {
   describe('#sayHey', function() {

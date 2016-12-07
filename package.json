@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/maschigokae/02-build-automation-and-dependency-management/issues"
   },
-  "homepage": "https://github.com/maschigokae/02-build-automation-and-dependency-management#readme"
+  "homepage": "https://github.com/maschigokae/02-build-automation-and-dependency-management#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
 }

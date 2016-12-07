@@ -22,3 +22,5 @@ gulp.task('dev', function () {
   //watching for changes in js files
   //subsequently runs the lint and test tasks
 });
+
+gulp.task('default', ['dev']);

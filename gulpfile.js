@@ -21,3 +21,13 @@ gulp.task('lint', function() {
   .pipe(eslint.format())
   .pipe(eslint.failAfterError());
 });
+
+// this task watches our dev environment (except node_modules) for changes.
+// anytime we save changes, the watcher runs our previous two tests.
+gulp.task('dev', function() {
+  gulp.watch(['**/*.js', '!node_modules'], ['lint', 'test']);
+});
+
+// this task sets the dev environment watcher task as the default.
+// since the first two tasks were set to run in the watcher task, all of our testing and linting is run when we update and save new code.
+gulp.task('default', ['dev']);

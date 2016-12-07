@@ -11,5 +11,9 @@ describe('Greet Module', function(){
       expect(greeting).to.have.property('greet');
       expect(result).to.equal('Hello, shawn');
     });
+    it('should return a string result', function(){
+      var result = greeting.greet('shawn');
+      expect(result).to.be.a('string');
+    });
   });
 });
